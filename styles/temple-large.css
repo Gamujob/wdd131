@@ -1,0 +1,34 @@
+@media screen and (min-width: 550px) {
+  header {
+    background-color: blueviolet;
+    display: flex;
+    color: #fff;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation ul{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .temple {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div {
+    justify-content: center;
+  }
+}
