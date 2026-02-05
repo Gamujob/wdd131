@@ -10,7 +10,7 @@ function calculateWindChill(temperature, wind) {
 
 const windId = document.querySelector("#windChill");
 const windChil = calculateWindChill(temperature, wind);
-windId.innerHTML = `Wind Chill:${windChil.toFixed(1)} ⁰C`;
+windId.innerHTML = `Wind Chill: ${windChil.toFixed(1)} ⁰C`;
 
 // get the current year of the footer
 const year = document.querySelector("#currentyear");
