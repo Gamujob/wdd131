@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Activity</title>
+  <meta name="description" content="This is the page for the activity of where I live, have visited or wish to visit">
+  <meta name="author" content=""Job Gamutambuli>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Uganda</h1>
+  </header>
+  <main>
+    <div >
+      <picture class="hero">
+        <source srcset="images/hero-large.Webp" media="(min-width: 1000px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 510px)">
+        <img src="images/hero-small.webp" alt="Place image" width="500" height="267">
+      </picture>
+    </div>
+    <div class="data">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> 241,038 sq km</p>
+      <p><strong>Population:</strong> 52,169,974</p>
+      <p><strong>Capital:</strong> Kampala</p>
+      <p><strong>Languages:</strong> Luganda, English</p>
+      <p><strong>Currency:</strong> Ugandan Shillings</p>
+      <p><strong>Time Zone:</strong> UTC+3</p>
+      <p><strong>Calling Code:</strong>  +256</p>
+      <p><strong>Internet TLD:</strong> .ug</p>
+  </div>
+
+  <div class="weather">
+    <h2>Weather</h2>
+    <div id="icon">
+      <img src="images/weather-icon.svg" alt="weather icon">
+    </div>
+    <div>
+      <p><strong>Temperature: </strong>10 ⁰C</p>
+      <p><strong>Condition: </strong>Cloudy</p>
+      <p><strong>Wind: </strong>5 km/h</p>
+      <p><strong id="windChill"></strong></p>
+    </div>
+  </div>
+
+  </main>
+  <footer>
+    <p><span id="currentyear"></span></p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
