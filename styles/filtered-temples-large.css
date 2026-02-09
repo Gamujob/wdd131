@@ -1,0 +1,47 @@
+@media screen and (min-width: 550px) {
+  header {
+    background-color: blueviolet;
+    display: flex;
+    color: #fff;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .navigation ul{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navigation a {
+    display: block;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #templeList {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 10px;
+  }
+  
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: 10px;
+  }
+  
+  #templeList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
