@@ -96,7 +96,7 @@ const temples = [
   }
 ];
 
-// const templeList = document.getElementById('templeList');
+const templeList = document.getElementById('templeList');
 createTempleCard(temples)
 
 
