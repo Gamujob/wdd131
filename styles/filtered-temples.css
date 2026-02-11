@@ -15,7 +15,6 @@ header {
   grid-template-columns: 1fr;
   background-color: var(--background-color);
   color: var(--text-color);
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   text-align: center;
