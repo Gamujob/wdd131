@@ -16,22 +16,23 @@ header {
   background-color: var(--background-color);
   color: var(--text-color);
   justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
 p {
   margin:1.5rem .6rem;
-  font-size: 2rem;
+  font-size: 15px;
 }
 
-nav {
-  display: grid;
-  padding: 10px;
-  grid-template-columns: 1fr;
-  max-width: 700px;
-  margin: 1rem auto;
+img {
+  width: 95%;
+  margin: 5px;
+  box-shadow: 0 5px 10px #000;
 }
 
-nav:hover {
+a:hover {
   background-color: rgb(5, 104, 5);
   color: var(--text-color);
 }
@@ -68,18 +69,17 @@ h1 {
 }
 
 div {
-  margin: 0 auto;
-  place-items: center;
+  max-width: 500px;
+  height: auto;
   background-color: #ddd;
-  text-align: center;
-  width: 350px;
+  margin-top: 10px;
 }
 
 #templeList {
   padding: 10px;
-  background-color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
 }
-
 
 .open a {
   display: block;

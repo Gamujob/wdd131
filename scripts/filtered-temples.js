@@ -96,29 +96,75 @@ const temples = [
   }
 ];
 
-const templeList = document.getElementById('templeList');
+// const templeList = document.getElementById('templeList');
+createTempleCard(temples)
 
-temples.forEach(temple => {
-  const div = document.createElement('div');
-  // div.classList.add('temple-card')
 
-  const name = document.createElement('p');
-  name.innerHTML = `<strong>${temple.templeName}</strong>`;
 
-  const location = document.createElement('p');
-  location.textContent = `Location: ${temple.dedicated}`;
+function createTempleCard(filteredTemples) {
+  document.querySelector('#templeList').innerHTML = "";
+  filteredTemples.forEach(temple => {
+    const div = document.createElement('div');
+    
+    const name = document.createElement('h3');
+    name.innerHTML = `<strong>${temple.templeName}</strong>`;
+    
+    const location = document.createElement('p');
+    location.textContent = `Location: ${temple.dedicated}`;
+    
+    const dedicated = document.createElement('p');
+    dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+    
+    const area = document.createElement('p');
+    area.textContent = `Area: ${temple.area}`;
+    
+    const templeImage = document.createElement('img');
+    templeImage.src = temple.imageUrl;
+    templeImage.alt = temple.templeName;
+    templeImage.width = 450;
+    templeImage.loading = 'lazy';
+    
+    div.append(name, location, dedicated, area, templeImage);
+    templeList.appendChild(div);
+  });
+}
 
-  const dedicated = document.createElement('p');
-  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+const homeLink = document.querySelector('#homeTemples');
+const oldLink = document.querySelector('#oldTemples');
+const newLink = document.querySelector('#newTemples');
+const largeLink = document.querySelector('#largeTemples');
+const smallLink = document.querySelector('#smallTemples');
 
-  const area = document.createElement('p');
-  area.textContent = `Area: ${temple.area}`;
+homeLink.addEventListener('click', () => {
+  createTempleCard(temples)
+});
 
-  const templeImage = document.createElement('img');
-  templeImage.src = temple.imageUrl;
-  templeImage.alt = temple.templeName;
-  templeImage.width = 300;
+oldLink.addEventListener('click', () => {
+  let oldTemples = temples.filter(temple => {
+    let year = parseInt(temple.dedicated.split(',')[0]);
+    return year < 1900;
+  });
+  createTempleCard(oldTemples)
+});
 
-  div.append(name, location, dedicated, area, templeImage);
-  templeList.appendChild(div);
+newLink.addEventListener('click', () => {
+  let newTemple = temples.filter(temple => {
+    let year = parseInt(temple.dedicated.split(',')[0])
+    return year > 2000;
+  });
+  createTempleCard(newTemple)
+});
+
+largeLink.addEventListener('click', () => {
+  let largeTemple = temples.filter(temple =>
+    temple.area > 90000
+  );
+  createTempleCard(largeTemple)
+});
+
+smallLink.addEventListener('click', () => {
+  let smallTemple = temples.filter(temple =>
+    temple.area < 10000
+  );
+  createTempleCard(smallTemple)
 });
