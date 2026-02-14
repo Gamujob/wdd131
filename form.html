@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="description" content="This is the page for the activity of the product review form for week5 WDD131 Dynamic Web Fundamentals">
+  <meta name="author" content="Job Gamutambuli">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <h1>Product Review</h1>
+    <form action="review.html" method="get" class="reviewform">
+      <div class="labl">
+        <label for="username" id="nameI">Product Name</label>
+        <select name="username" id="username" required>
+      </div>
+        <option value="" selected disabled>Select a Product...</option>
+      </select>
+      <p>Overall Rating</p>
+      <div class="rating">
+        <div class="radio">
+          <input type="radio" name="stars" id="stars" value="onestar" required>
+          <label for="stars">&#9734</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="stars" id="stars" value="twostar" required>
+          <label for="stars">&#9734&#9734</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="stars" id="stars" value="threestar" required>
+          <label for="stars">&#9734&#9734&#9734</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="stars" id="stars" value="fourstar" required>
+          <label for="stars">&#9734&#9734&#9734&#9734</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="stars" id="stars" value="fivestar" required>
+          <label for="stars">&#9734&#9734&#9734&#9734&#9734</label>
+        </div>
+      </div>
+      <div class="labl">
+        <label>Date of Installation</label>
+        <input type="date" name="dateofinstallation" id="dateofinstallation" required>
+      </div>
+      <p>Which features did you find useful in the product? <br>(Check all that apply)</p>
+      <div class="box">
+        <input type="checkbox" id="durability" name="durability" value="durable">
+        <label for="durability" class="check">Durability</label>
+      </div>
+      <div class="box">
+        <input type="checkbox" id="easeofuse" name="easeofuse" value="using">
+        <label for="easeofuse" class="check">Ease of Use</label>
+      </div>
+      <div>
+        <input type="checkbox" id="performance" name="performance" value="performing">
+        <label for="performance" class="check">Performance</label>
+      </div>
+      <div>
+        <input type="checkbox" id="design" name="design" value="designing">
+        <label for="design" class="check">Design</label>
+      </div>
+
+      <div class="labl">
+        <label for="review">Written Review <span class="optional">(optional)</span></label>
+        <textarea name="review" id="review"></textarea>
+      </div>
+
+      <div class="labl">
+        <label for="yourname">Your Name<span class="optional">(optional)</span></label>
+        <input type="text" id="yourname" name="yourname">
+      </div>
+
+      <div class="submit">
+        <input type="submit" value=" Post Review">
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p><span id="currentyear"></span></p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
