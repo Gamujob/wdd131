@@ -11,17 +11,18 @@
 </head>
 <body>
   <header></header>
+
   <main>
     <h1>Product Review</h1>
     <form action="review.html" method="get" class="reviewform">
       <div class="labl">
-        <label for="username" id="nameI">Product Name</label>
-        <select name="username" id="username" required>
+        <label for="productname" id="nameI">Product Name</label>
+        <select name="productname" id="productname" required>
+          <option value="" selected disabled>Select a Product...</option>
+        </select>
       </div>
-        <option value="" selected disabled>Select a Product...</option>
-      </select>
-      <p>Overall Rating</p>
       <div class="rating">
+        <p>Overall Rating</p>
         <div class="radio">
           <input type="radio" name="stars" id="stars" value="onestar" required>
           <label for="stars">&#9734</label>
@@ -44,7 +45,7 @@
         </div>
       </div>
       <div class="labl">
-        <label>Date of Installation</label>
+        <label for="dateofinstallation">Date of Installation</label>
         <input type="date" name="dateofinstallation" id="dateofinstallation" required>
       </div>
       <p>Which features did you find useful in the product? <br>(Check all that apply)</p>
