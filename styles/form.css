@@ -15,10 +15,6 @@ h1 {
   background-color: #ddd;
 }
 
-#nameI {
-  margin-left: 10px;
-}
-
 .labl {
   margin-left: 10px;
   margin-top: 20px;
@@ -34,14 +30,13 @@ h1 {
   display: block;
   padding: .75rem;
   width: 95%;
-  margin-left: 10px;
   border: none;
 }
 
 .reviewform input[type='text'] {
   display: block;
   padding: .75rem;
-  width: 90%;
+  width: 92%;
   border: none;
 }
 
@@ -98,17 +93,21 @@ h1 {
   width: 95%;
 }
 
+.optional {
+  color: #0000ff;
+}
+
 /* --------FORM STYLING--------- */
 footer {
   display: block;
-  background-color: blueviolet;
+  background-color: #8a2be2;
   color: #fff;
   text-align: center;
   font-size: 20px;
 }
 
 #lastModified {
-  color: rgb(255, 255, 0);
+  color: #ffff00;
 }
 
 @media screen and (min-width: 510px) {
