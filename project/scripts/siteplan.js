@@ -87,12 +87,12 @@ function createCakeCard(products) {
     name.innerHTML = `<strong>${product.cakeType}</strong>`
 
     const cakeImage = document.createElement('img');
-    cakeImage.src = product.imageUrl;
-    cakeImage.alt = product.templeName;
+    cakeImage.src = product.imageURL;
+    cakeImage.alt = product.cakeType;
     cakeImage.width = 450;
     cakeImage.loading = 'lazy';
 
     div.append(name, cakeImage);
-    productList.appendChild(div);
+    cakeList.appendChild(div);
   });
 }
