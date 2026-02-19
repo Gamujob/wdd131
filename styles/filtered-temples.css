@@ -67,13 +67,6 @@ h1 {
   padding: 10px;
 }
 
-div {
-  max-width: 500px;
-  height: auto;
-  background-color: #ddd;
-  margin-top: 10px;
-}
-
 #templeList {
   padding: 10px;
   text-align: center;

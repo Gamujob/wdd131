@@ -1,0 +1,53 @@
+@media screen and (min-width: 510px) {
+  .title {
+    display: block;
+    place-items: center;
+    text-align: center;
+  }
+
+  
+  .largeImage img {
+    border: 3px solid #555;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 5px 5px #000;
+  }
+
+  .largeImage p {
+    position: absolute;
+    width: 250px;
+    top: 49%;
+    right: 20px;
+  }
+
+  .smallImage {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .smallImage img {
+    margin: 3px;
+    width: 99%;
+    box-shadow: 0 5px 5px #000;
+  }
+  
+  .navigation ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+  }
+  
+  .navigation a {
+    display: block;
+  }
+  
+  #menu {
+    display: none;
+  }
+
+  form {
+    max-width: 800px;
+    margin: 5px auto;
+  }
+
+}

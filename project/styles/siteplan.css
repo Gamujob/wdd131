@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  background-color: #0000ff;
+  border: 1px solid #aaa;
+  width: 100%;
+  place-items: center;
+}
+
+.navigation ul {
+  background-color: #000;
+  text-align: center;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  box-shadow: 0 5px 5px #000;
+}
+
+.largeImage p {
+  background-color: yellow;
+  box-shadow: 0 2px 4px #000;
+}
+
+.navigation a {
+  display: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+} 
+
+a:hover {
+  background-color: yellow;
+  color: green;
+  padding: 5px;
+}
+
+.open a {
+  display: block;
+}
+
+
+#menu::before {
+  content: '☰';
+}
+
+#menu.open::before {
+  content: '❌';
+}
+
+.title {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  justify-content: space-between;
+}
+
+#menu {
+  display: block;
+  width: 20px;
+  height: 25px;
+}
+
+footer {
+  display: block;
+  background-color: #0000ff;
+  color: #fff;
+  text-align: center;
+}
+
+.aboutus {
+  margin: 10px;
+  background-color: #ddd;
+}
+
+.aboutus h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.aboutus p {
+  padding: 10px;
+  text-align: center;
+}
+
+.aboutus h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+/* ----------------FORM--------------- */
+
+form {
+  border: 1px solid #bbb;
+  margin: 10px;
+  background-color: #ddd;
+}
+
+label {
+  margin-left: 10px;
+  display: block;
+  padding-top: 1rem;
+}
+
+input {
+  margin-left: 10px;
+  width: 95%;
+  height: 50px;
+}
+
+textarea {
+  margin-left: 10px;
+  width: 95%;
+}
+
+.submit {
+  width: 100%;
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+.submission {
+  background-color: navy;
+  color: #fff;
+  font-size: 20px;
+  width: 400px;
+}
+
+.subdetail {
+  border: 1px solid #000;
+  background-color: #4fdddd;
+  margin: 10px;
+  height: 200px;
+}
+
+.subheading {
+  background-color: #000;
+  color: #fff;
+}
+
+.subparagraph {
+  margin: 10px;
+  font-size:25px;
+}
+
+/* ----------------FORM--------------- */
+
+#productList {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+}
