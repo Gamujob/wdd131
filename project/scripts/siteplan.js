@@ -76,7 +76,7 @@ const cakes = [
 
 
 const cakeList = document.getElementById('productList');
-createCakeCard(cakeList);
+createCakeCard(cakes);
 
 function createCakeCard(products) {
   document.querySelector('#productList').innerHTML = "";
